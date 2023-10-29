@@ -1,0 +1,10 @@
+pipeline {
+    agent any 
+    stages{
+        stage ("Git CHeckout") {
+            steps {
+                     git credentialsId: 'github', url: 'https://github.com/sunil566/myweb'
+            }
+            }
+        }
+    }
