@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("weclome"){
+            steps{
+                git credentialsId: 'github', url: 'https://github.com/sunil566/myweb'
+            }
+        }
+        
+    }
+}
